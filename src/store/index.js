@@ -19,9 +19,6 @@ export default createStore({
     layout: "default",
   },
   mutations: {
-    toggleConfigurator(state) {
-      state.showConfig = !state.showConfig;
-    },
     sidebarMinimize(state) {
       let sidenav_show = document.querySelector("#app");
       if (state.isPinned) {

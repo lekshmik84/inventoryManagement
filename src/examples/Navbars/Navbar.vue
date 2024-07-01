@@ -19,7 +19,6 @@ const currentDirectory = computed(() => {
 });
 
 const minimizeSidebar = () => store.commit("sidebarMinimize");
-const toggleConfigurator = () => store.commit("toggleConfigurator");
 
 const closeMenu = () => {
   setTimeout(() => {
@@ -77,9 +76,6 @@ const closeMenu = () => {
             </a>
           </li>
           <li class="px-3 nav-item d-flex align-items-center">
-            <a class="p-0 nav-link text-white" @click="toggleConfigurator">
-              <i class="cursor-pointer fa fa-cog fixed-plugin-button-nav"></i>
-            </a>
           </li>
           <li
             class="nav-item dropdown d-flex align-items-center"
